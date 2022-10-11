@@ -1,0 +1,142 @@
+* {
+    box-sizing: border-box;
+ }
+ body {
+   background: #f5f6f7;
+   font-family: 'Roboto', sans-serif;
+ }
+ 
+ .form {
+   max-width: 590px;
+   padding: 40px 30px 30px;
+   margin: 50px auto 30px;
+   background: white;
+   text-align: center;
+   border-radius: 10px;
+ }
+ 
+ .form h3 {
+   position: relative;
+   margin: 0 0 40px;
+   text-align: center;
+   color: #209983;
+   font-size: 30px;
+   font-weight: normal;
+ }
+ 
+ .form__items {
+   position: relative;
+   margin-bottom: 40px;
+ }
+ 
+.form__items input {
+   display: block;
+   color: #1b7666;
+   font-weight: 400;
+   font-size: 20px;
+   width: 235px;
+   text-align: center;
+   padding: 0 5px;
+   margin: 0px auto;
+   line-height: 40px;
+   font-family: 'Roboto', sans-serif;
+   background: none;
+   border-width: 0;
+   border-bottom: 2px solid #209983;
+   transition: all 0.2s ease;
+}
+ 
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+   -webkit-appearance: none; 
+   margin: 0;
+}
+ 
+.form__items label {
+   position: absolute;
+   color: #9d959d;
+   left: 0px;
+   right: 0px;
+   font-size: 16px;
+   font-weight: 300;
+   transform: translateY(-35px);
+   transition: all 0.2s ease;
+ }
+
+.form__items input:focus {
+    outline: 0;
+    border-color: #209983;
+ }
+ 
+.form__items input:focus+label, .form__items input:valid+label {
+   transform: translate(-38px, -60px);
+   left: 72px;
+   font-size: 14px;
+   font-weight: 400;
+   outline: 0;
+   border-color: #209983;
+   color: #9d959d;
+}
+ 
+.p__hint {
+   position: relative;
+   font-size: 14px;
+   font-weight: 400;
+   color: #F77A52;
+   margin: 0px 0px 10px;
+   transform: translateY(-30px);
+}
+ 
+.j__btn__request {
+   width: 235px;
+   padding: 0px;
+   background-color: transparent;
+   border: none;
+   outline: none;
+   -webkit-tap-highlight-color: transparent;
+   box-shadow: none;
+   cursor: pointer;
+   
+   margin: 10px 10px;
+   padding: 10px 15px;
+   border-radius: 10px;
+   font-size: 12px;
+   line-height: 15px;
+   text-transform: uppercase;
+   color: white;
+   background: #209983;
+   transition: 0.3s;
+}
+ 
+.j__btn__request:hover {
+   box-shadow: 0px 2px 8px 2px rgba(141,150,178,.3);
+   transform: scale(1.05);
+}
+ 
+.j__result {
+   position: relative;
+   display: flex;
+   margin: 0px auto;
+   flex-wrap: wrap;
+   margin-top: 30px;
+   width: 610px;
+   height: auto;
+ }
+ 
+ .card {
+   width: 200px;
+   align-items: center;
+   text-align: center;
+ }
+  
+  .card__image {
+    display: block;
+    width: 200px;
+    height: 150px;
+    padding: 5px 20px;
+ }
+
+ .p__card {
+   margin: 2px 0px 15px;
+   color: #1b7666;
+ }
